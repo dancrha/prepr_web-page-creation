@@ -7,7 +7,7 @@ const Navbar = () => {
     <header className='py-4 px-8 sticky z-10 w-full'>
       <nav className='flex max-container items-center'>
         <Image
-          src='/assets/logo.png'
+          src='/assets/preprlogo.png'
           width={130}
           height={130}
           alt='preprlabs logo'
