@@ -14,7 +14,7 @@ const Navbar = () => {
         />
 
         <ul className='pl-10 flex mx-auto pt-3 gap-16'>
-          <div className='pl-10'></div>
+          <div className='pl-20'></div>
           <p className=''></p>
           {/* Map over the navLinks array */}
           {navLinks.map((item) => (
@@ -47,9 +47,17 @@ const Navbar = () => {
           <input
             type='text'
             placeholder='Search...'
-            className='border border-gray-400 px-2 py-1 rounded'
+            className='border border-gray-300 px-2 py-1 rounded'
           />
         </li>
+        <ul className='pl-4'>
+          <Image
+            src='/assets/profile.png'
+            width={30}
+            height={30}
+            alt='message'
+          />
+        </ul>
       </nav>
     </header>
   );
