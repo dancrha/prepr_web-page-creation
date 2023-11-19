@@ -9,11 +9,13 @@ const LabsPage = () => {
       <Navbar />
 
       <div>
-        <p className='text-3xl font-semibold m-12'>Prepr Labs</p>
+        <p className='text-3xl font-semibold flex pl-96 pb-8 pt-12'>
+          Prepr Labs
+        </p>
       </div>
 
-      <div className='bg-white border rounded-md w-[60%] mx-auto'>
-        <p className='font-semibold m-10 text-xl'>Browse Labs</p>
+      <div className='bg-white border rounded-md w-[60%] mx-auto pb-8'>
+        <p className='font-semibold pl-8 pt-8 text-xl'>Browse Labs</p>
 
         <LabCard />
         <LabCard />
