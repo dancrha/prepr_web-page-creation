@@ -1,14 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import { BeakerIcon } from "@heroicons/react/24/solid";
 
-const LabCard = () => {
+const ChallengeCard = () => {
   return (
     <div className='flex justify-center pt-12'>
-      <div className='border flex bg-white  rounded-md w-[900px] h-[270px] relative hover:shadow-xl hover:scale-105 active:scale-90 transition duration-150'>
+      <div className='border flex bg-white rounded-md w-[900px] h-[270px] relative hover:shadow-xl hover:scale-105 active:scale-90 transition duration-150'>
         <div className='p-4'>
           <Image
-            src='/assets/lab1.png'
+            src='/assets/challenge.png'
             width={200}
             height={300}
             alt='message'
@@ -16,19 +15,24 @@ const LabCard = () => {
         </div>
 
         <p className='pt-4 text-gray-700 font-semibold text-2xl'>
-          Prepr CARE Lab
+          DTP & FUN - Team Business Innovation Challenge
         </p>
 
-        <button className='absolute top-4 right-4 bg-gray-700 text-white rounded p-1 pr-2 text-lg hover:shadow-xl hover:scale-105 active:scale-90 transition duration-150'>
-          + Follow
-        </button>
+        <Image
+          className='absolute top-[58px] left-[233px]'
+          src='/assets/puzzle.svg'
+          width={25}
+          height={300}
+          alt='puzzle'
+        />
 
-        <BeakerIcon className='h-6 w-6 absolute top-[58px] left-[233px] text-blue-500' />
         <p className='font-bold text-lg absolute top-14 left-[265px]'>
-          Public Lab <span className='font-extralight'>|</span>{" "}
-          <span className='font-normal'>Last Update:</span> 1 hour ago{" "}
+          Private Challenge <span className='font-extralight'>|</span>{" "}
+          <span className='font-normal'>Challenge deadline:</span> 12/01/2023{" "}
           <span className='font-extralight'>|</span>{" "}
-          <span className='font-normal'>Members:</span> 0{" "}
+          <span className='font-normal'>Total submissions:</span> 0{" "}
+          <span className='font-extralight'>|</span>{" "}
+          <span className='font-normal'>Status:</span> Open{" "}
           <span className='font-extralight'>|</span>{" "}
           <span className='font-normal'>Duration:</span> None{" "}
           <span className='font-extralight'>|</span>{" "}
@@ -36,13 +40,16 @@ const LabCard = () => {
         </p>
 
         <p className='pt-4 absolute top-[100px] left-[233px] text-sm overflow-auto max-h-[90px]'>
-          Welcome to the CARE Lab, a space to collaborate and communicate ideas,
-          resources, best practices, and awareness to help manage stress,
-          relieve anxiety, and carry our collective burdens together.
-          Participants are invited to share stories and resources while creating
-          a safe space for everyone to share and learn from each other.
-          Contributors are invited to host events and webinars that can be made
-          accessible through the CARE Lab resources section.
+          How might we better support businesses around us? Businesses around
+          the world have had to adapt over the last 3 years as the nature of
+          sales has diversified and changed, and will need to continue to evolve
+          to meet the realities of a post-pandemic world. Challenges abound
+          across all aspects of organizations&apos business models, including
+          operations, workforce, customer experience and technology, but so do
+          opportunities. How might we support the future of different industries
+          in terms of solving their challenges? Your team&aposs task is to
+          create a new product or service that could be commercially viable and
+          sold via B2B (business to business) sales.
         </p>
 
         <p className='absolute top-[140px] left-[15px]'>
@@ -66,4 +73,4 @@ const LabCard = () => {
   );
 };
 
-export default LabCard;
+export default ChallengeCard;

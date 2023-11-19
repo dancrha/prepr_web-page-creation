@@ -3,7 +3,7 @@
 import TypewriterComponent from "typewriter-effect";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
+import MenuBtns from "@/components/MenuBtns";
 import Footer from "@/components/Footer";
 import SearchBar from "@/components/SearchBar";
 import LabCard from "@/components/LabCard";
@@ -54,13 +54,12 @@ const LandingHero = () => {
         </div>
       </div>
 
+      <div className='flex justify-center mb-10 font-semibold text-3xl'>
+        <p>Recommended content based on your interests & skills</p>
+      </div>
       <SearchBar />
-      <Sidebar />
-      <LabCard />
-      <LabCard />
-      <LabCard />
-      <LabCard />
-      <LabCard />
+      <MenuBtns />
+
       <Footer />
     </div>
   );

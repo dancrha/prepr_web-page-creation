@@ -28,7 +28,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <ul className='flex gap-4 '>
+        <ul className='flex gap-4 hover:cursor-pointer'>
           <Image
             src='/assets/notification.png'
             width={30}
@@ -50,12 +50,12 @@ const Navbar = () => {
             className='border border-gray-300 px-2 py-1 rounded'
           />
         </li>
-        <ul className='pl-4'>
+        <ul className='pl-4 hover:cursor-pointer'>
           <Image
             src='/assets/profile.png'
             width={30}
             height={30}
-            alt='message'
+            alt='profile'
           />
         </ul>
       </nav>
