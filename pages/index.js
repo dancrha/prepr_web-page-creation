@@ -7,6 +7,7 @@ import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
 import SearchBar from "@/components/SearchBar";
 import LabCard from "@/components/LabCard";
+import Image from "next/image";
 
 const LandingHero = () => {
   const handleStartLearningClick = () => {
@@ -18,6 +19,13 @@ const LandingHero = () => {
       <Navbar />
       <div className='text-gray-700 font-bold py-36 text-center space-y-5 h-screen'>
         <div className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold'>
+          <Image
+            className='mx-auto mb-12'
+            src='/assets/preprlogo.png'
+            width={300}
+            height={300}
+            alt='message'
+          />
           <h1 className='text-gray-700 '>Explore Your Interests</h1>
           <div className='text-transparent bg-clip-text bg-gradient-to-r pb-5 from-blue-500  to-green-500'>
             <TypewriterComponent

@@ -4,7 +4,7 @@ import { BeakerIcon } from "@heroicons/react/24/solid";
 
 const LabCard = () => {
   return (
-    <div className='flex justify-center pt-12 '>
+    <div className='flex justify-center pt-12'>
       <div className='border flex bg-white border-gray-800 w-[900px] h-[270px] relative hover:shadow-xl hover:scale-105 active:scale-90 transition duration-150'>
         <div className='p-4'>
           <Image
