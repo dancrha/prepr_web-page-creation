@@ -15,6 +15,7 @@ import {
 } from "@tremor/react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useTheme } from "@/context/ThemeContext";
 
 const leaderboard = [
   {
@@ -242,11 +243,20 @@ const deadlines = [
 
 const Dashboard = () => {
   const router = useRouter();
+  const { darkMode, toggleDarkMode } = useTheme();
 
   return (
-    <div className='bg-gray-100 h-screen w-full'>
+    <div
+      className={`${darkMode ? "bg-gray-700  " : "bg-gray-100 text-gray-700"}`}
+    >
       <Navbar />
-      <p className='mt-8 ml-36 text-2xl font-semibold'>User Dashboard</p>
+      <p
+        className={`mt-8 ml-36 text-2xl font-semibold ${
+          darkMode ? "text-white" : "text-gray-700"
+        }`}
+      >
+        User Dashboard
+      </p>
       <div className='flex'>
         <div className='flex ml-36 mt-4'>
           <Card className='bg-white w-[600px] max-h-80'>

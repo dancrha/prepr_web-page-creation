@@ -2,18 +2,26 @@ import Footer from "@/components/Footer";
 import LabCard from "@/components/LabCard";
 import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
+import { useTheme } from "@/context/ThemeContext";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 
 const ProjectsPage = () => {
+  const { darkMode, toggleDarkMode } = useTheme();
   const router = useRouter();
   return (
-    <div className='bg-gray-100'>
+    <div
+      className={`${darkMode ? "bg-gray-700 " : "bg-gray-100 text-gray-700"}`}
+    >
       <Navbar />
 
       <div>
-        <p className='text-3xl font-semibold flex pl-96 pb-8 pt-12'>
+        <p
+          className={`text-3xl font-semibold flex pl-96 pb-8 pt-12 ${
+            darkMode ? "text-white" : "text-gray-700"
+          }`}
+        >
           Prepr Projects
         </p>
       </div>

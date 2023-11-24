@@ -3,8 +3,10 @@ import Link from "next/link";
 import LabCard from "./LabCard";
 import ChallengeCard from "./ChallengeCard";
 import ProjectCard from "./ProjectCard";
+import { useTheme } from "@/context/ThemeContext";
 
 const MenuBtns = () => {
+  const { darkMode, toggleDarkMode } = useTheme();
   const [selectedCategory, setSelectedCategory] = useState("labs");
 
   // Define your sidebar links
@@ -25,7 +27,9 @@ const MenuBtns = () => {
         {sidebarLinks.map((item) => (
           <div
             key={item.label}
-            className={`p-4 text-lg font-semibold w-[120px] rounded-full bg-gray-700 text-white border-0 hover:shadow-xl hover:scale-105 active:scale-90 transition duration-150 ${
+            className={`p-4 text-lg font-semibold w-[120px] rounded-full ${
+              darkMode ? "bg-white text-gray-700" : "bg-gray-700 text-white"
+            } border-0 hover:shadow-xl hover:scale-105 active:scale-90 transition duration-150 ${
               selectedCategory === item.category && "bg-blue-500"
             }`}
             onClick={() => handleCategoryClick(item.category)}
