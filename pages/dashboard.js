@@ -582,7 +582,7 @@ const Dashboard = () => {
           </div>
           <div className='flex'>
             <Image
-              src='/assets/pro4.png'
+              src='/assets/pro3.png'
               width={100}
               height={20}
               alt='trophy'
