@@ -14,6 +14,7 @@ import {
   Text,
 } from "@tremor/react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const leaderboard = [
   {
@@ -240,6 +241,7 @@ const deadlines = [
 ];
 
 const Dashboard = () => {
+  const router = useRouter();
   return (
     <div className='bg-gray-100 h-screen w-full'>
       <Navbar />
@@ -248,7 +250,7 @@ const Dashboard = () => {
         <div className='flex ml-36 mt-4'>
           <Card className='bg-white w-[600px] max-h-80'>
             <div className='flex justify-between gap-2'>
-              <Text>My Progres</Text>
+              <Text>My Progress</Text>
               <Image
                 className='mt-0'
                 src='/assets/progress.png'
@@ -520,7 +522,24 @@ const Dashboard = () => {
           </div>
         </Card>
         <Card className='w-[330px] h-[400px] ml-4 mt-4 overflow-y-auto'>
-          <Text>Projects</Text>
+          <div className='flex justify-between'>
+            <Text>Projects</Text>
+
+            <button
+              onClick={() => router.push("/newproject")}
+              className='border flex gap-2 text-gray-700 bg-green-500 rounded-md shadow-md p-2 hover:scale-105 transition'
+            >
+              <Image
+                src='/assets/add2.png'
+                width={20}
+                height={20}
+                alt='trophy'
+                className='mt-0.5'
+              />
+              New Project
+            </button>
+          </div>
+
           <div className=' flex mt-4 justify-between'>
             <p className='font-semibold'>
               Frontend Developer Challenge 3: Dashboard and Project Creation
