@@ -119,7 +119,7 @@ const LandingHero = () => {
                   className='mt-4 p-2 rounded bg-blue-500 text-white self-end hover:scale-105 transition active:scale-95 duration-150'
                   onClick={() => setIsOpen(false)}
                 >
-                  Close Pop-up
+                  Close Window
                 </button>
               </div>
             </div>
