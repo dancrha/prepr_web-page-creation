@@ -125,7 +125,7 @@ const Dashboard = () => {
             </div>
             <div className='flex justify-end'>
               <button
-                onClick={() => router.push("/team")}
+                onClick={() => router.push("/dashboard")}
                 className='border flex gap-2 text-gray-700 bg-green-500 rounded-md shadow-md p-2 hover:scale-105 transition'
               >
                 Create Project

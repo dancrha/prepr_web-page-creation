@@ -242,6 +242,7 @@ const deadlines = [
 
 const Dashboard = () => {
   const router = useRouter();
+
   return (
     <div className='bg-gray-100 h-screen w-full'>
       <Navbar />
@@ -271,7 +272,7 @@ const Dashboard = () => {
           <div className='bg-white border border-gray-300 w-[600px] h-[400px] rounded-lg shadow-xl'></div> */}
         </div>
 
-        <Card className='max-w-5xl mt-4 max-h-80 ml-4 overflow-y-auto scrollbar-thin '>
+        <Card className='max-w-5xl mt-4 max-h-80 ml-4 overflow-y-auto no-scrollbar '>
           <div className='flex justify-between gap-2'>
             <Text>Leaderboard</Text>
             <Image
@@ -302,7 +303,7 @@ const Dashboard = () => {
       </div>
 
       <div className='flex'>
-        <Card className='w-[600px] h-[400px] ml-36 mt-4 overflow-y-auto'>
+        <Card className='w-[600px] h-[400px] ml-36 mt-4 overflow-y-auto no-scrollbar'>
           <Text>Upcoming Challenge Deadlines</Text>
           <div className='mt-4'>
             <List>
@@ -315,7 +316,7 @@ const Dashboard = () => {
             </List>
           </div>
         </Card>
-        <Card className='w-[330px] h-[400px] ml-4 mt-4 overflow-y-auto'>
+        <Card className='w-[330px] h-[400px] ml-4 mt-4 overflow-y-auto no-scrollbar'>
           <Text>Labs</Text>
           <div className=' flex mt-4 justify-between'>
             <p className='font-semibold'>Web Developer</p>
@@ -418,7 +419,7 @@ const Dashboard = () => {
             </p>
           </div>
         </Card>
-        <Card className='w-[330px] h-[400px] ml-4 mt-4 overflow-y-auto'>
+        <Card className='w-[330px] h-[400px] ml-4 mt-4 overflow-y-auto no-scrollbar'>
           <Text>Challenges</Text>
           <div className=' flex mt-4 justify-between'>
             <p className='font-semibold'>Business Innovation Challenge</p>
@@ -521,13 +522,13 @@ const Dashboard = () => {
             </p>
           </div>
         </Card>
-        <Card className='w-[330px] h-[400px] ml-4 mt-4 overflow-y-auto'>
+        <Card className='w-[330px] h-[400px] ml-4 mt-4 overflow-y-auto no-scrollbar'>
           <div className='flex justify-between'>
             <Text>Projects</Text>
 
             <button
               onClick={() => router.push("/newproject")}
-              className='border flex gap-2 text-gray-700 bg-green-500 rounded-md shadow-md p-2 hover:scale-105 transition'
+              className='border flex gap-2 text-black bg-green-500 rounded-md shadow-md p-2 hover:scale-105 transition'
             >
               <Image
                 src='/assets/add2.png'
@@ -535,6 +536,7 @@ const Dashboard = () => {
                 height={20}
                 alt='trophy'
                 className='mt-0.5'
+                color='white'
               />
               New Project
             </button>
@@ -610,6 +612,19 @@ const Dashboard = () => {
               Gather clues from the career test and your work preferences to
               identify top career options to explore.
             </p>
+          </div>
+
+          <div className=' flex mt-4 justify-between'>
+            <p className='font-semibold '>test project</p>
+          </div>
+          <div className='flex'>
+            <Image
+              src='/assets/pro3.png'
+              width={100}
+              height={20}
+              alt='trophy'
+            />
+            <p className='ml-2 text-xs'>test</p>
           </div>
         </Card>
       </div>
