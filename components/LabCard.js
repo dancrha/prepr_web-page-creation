@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { BeakerIcon } from "@heroicons/react/24/solid";
+// import { BeakerIcon } from "@heroicons/react/24/solid";
 
 const LabCard = () => {
   return (
@@ -23,7 +23,7 @@ const LabCard = () => {
           + Follow
         </button>
 
-        <BeakerIcon className='h-6 w-6 absolute top-[58px] left-[233px] text-blue-500' />
+        {/* <BeakerIcon className='h-6 w-6 absolute top-[58px] left-[233px] text-blue-500' /> */}
         <p className='font-bold text-lg absolute top-14 left-[265px]'>
           Public Lab <span className='font-extralight'>|</span>{" "}
           <span className='font-normal'>Last Update:</span> 1 hour ago{" "}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { BeakerIcon } from "@heroicons/react/24/solid";
+// import { BeakerIcon } from "@heroicons/react/24/solid";
 
 const ProjectCard = () => {
   return (
