@@ -248,7 +248,7 @@ const Dashboard = () => {
         <div className='flex ml-36 mt-4'>
           <Card className='bg-white w-[600px] max-h-80'>
             <div className='flex justify-between gap-2'>
-              <Text>My Progress</Text>
+              <Text>My Progres</Text>
               <Image
                 className='mt-0'
                 src='/assets/progress.png'
